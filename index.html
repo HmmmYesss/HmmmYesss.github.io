@@ -1,11 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <style>
-  body {background-image: url('Walk_a_Mile_in_a_Chuds_Shoe.jpg');}
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
-  </body>
+</head>
+<body>
+  
+<div class="row">
+  <div class="column">
+    <img src="Walk_a_Mile_in_a_Chuds_Shoe.jpg" alt="Chud" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Invisible_Horse_plane.jpg" alt="Horse" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="Neutron_Star_to_the_Dome.jpg" alt="Star" style="width:100%">
+  </div>
+</div>
+
+</body>
 </html>
